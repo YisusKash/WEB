@@ -77,36 +77,16 @@ if (hamburger && dropdown) {
   });
 }
 
-  // FORM
-  const form = document.querySelector('form');
 
-form.addEventListener('submit', function(e) {
-    e.preventDefault();
-    const formData = new FormData(form);
-    const object = Object.fromEntries(formData);
-    const json = JSON.stringify(object);
+document.querySelectorAll('.faq-question').forEach(item => {
+  item.addEventListener('click', () => {
+    const parent = item.parentElement;
+    
+    // Cerrar otros si se abre uno nuevo (opcional)
+    document.querySelectorAll('.faq-item').forEach(child => {
+      if (child !== parent) child.classList.remove('active');
+    });
 
-    const btn = form.querySelector('button');
-    btn.innerHTML = "Enviando...";
-
-    fetch('https://api.web3forms.com/submit', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-                'Accept': 'application/json'
-            },
-            body: json
-        })
-        .then(async (response) => {
-            if (response.status == 200) {
-                btn.innerHTML = "¡Mensaje Enviado!";
-                form.reset(); // Limpia el formulario
-            } else {
-                btn.innerHTML = "Error al enviar";
-            }
-        })
-        .catch(error => {
-            console.log(error);
-            btn.innerHTML = "Algo salió mal";
-        });
+    parent.classList.toggle('active');
+  });
 });
