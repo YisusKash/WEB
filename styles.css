@@ -103,8 +103,25 @@ button,
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
   z-index: 999;
   transition: 0.3s ease;
-}
+animation: whatsappPulse 2s infinite;
 
+}
+@keyframes whatsappPulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+  }
+
+  70% {
+    transform: scale(1.08);
+    box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+  }
+
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+  }
+}
 .whatsapp-float:hover {
   transform: scale(1.1);
 }
@@ -706,6 +723,72 @@ nav a:hover {
   font-weight: 600;
   cursor: pointer;
 }
+/* =========================================
+   12. FAQ ACORDEÓN (ESTILO DARK)
+   ========================================= */
+.faq-container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.faq-item {
+  background: var(--bg-soft);
+  margin-bottom: 15px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.faq-question {
+  padding: 20px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+.faq-question h3 {
+  font-size: 16px;
+  color: white;
+  margin: 0;
+}
+
+.faq-question i {
+  color: var(--primary-soft);
+  transition: transform 0.3s ease;
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.faq-answer p {
+  padding: 0 25px 20px 25px;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* Estado Activo */
+.faq-item.active {
+  border: 1px solid rgba(47, 136, 255, 0.4);
+}
+
+.faq-item.active .faq-answer {
+  max-height: 200px; /* Suficiente para el texto */
+}
+
+.faq-item.active .faq-question i {
+  transform: rotate(180deg);
+}
+
+
 
 /* =========================================
    10. CARRUSEL Y FOOTER
