@@ -775,13 +775,13 @@ nav a:hover {
   line-height: 1.6;
 }
 
-/* Estado Activo */
+
 .faq-item.active {
   border: 1px solid rgba(47, 136, 255, 0.4);
 }
 
 .faq-item.active .faq-answer {
-  max-height: 200px; /* Suficiente para el texto */
+  max-height: 200px; 
 }
 
 .faq-item.active .faq-question i {
@@ -791,7 +791,7 @@ nav a:hover {
 
 
 /* =========================================
-   10. CARRUSEL Y FOOTER
+   10. CARRUSEL
    ========================================= */
 .carousel-section {
   padding: 60px 0;
@@ -845,7 +845,7 @@ nav a:hover {
   width: max-content;
 }
 
-/* Re-utilización de .card dentro de carrusel */
+
 .carousel .card {
   flex: 0 0 300px;
   background: #0f1729;
