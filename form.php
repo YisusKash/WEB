@@ -6,7 +6,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = htmlspecialchars($_POST['email']);
     $mensaje_usuario = htmlspecialchars($_POST['message']);
 
-    $para = "nobody281812@gmail.com";
+    $para = "yvalderrama887@gmail.com";
     $asunto = "Nuevo mensaje de contacto: $nombre";
 
     $mensaje = "Has recibido un nuevo mensaje desde incolpartes.com\n\n";
