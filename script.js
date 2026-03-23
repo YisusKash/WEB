@@ -1,5 +1,3 @@
-// ===== CARRUSEL PROFESIONAL FUNCIONAL =====
-
 function initCarousel(trackId) {
   const track = document.getElementById(trackId);
   const carousel = track.parentElement;
@@ -40,37 +38,35 @@ function initCarousel(trackId) {
 initCarousel("cat-track");
 initCarousel("top-track");
 
-// ===== HAMBURGUESA MEJORADA =====
-
 const hamburger = document.getElementById("hamburger");
 const dropdown = document.getElementById("dropdown");
 
 if (hamburger && dropdown) {
 
   hamburger.addEventListener("click", (e) => {
-    e.stopPropagation(); // evita que se cierre al abrir
+    e.stopPropagation();
     hamburger.classList.toggle("active");
     dropdown.classList.toggle("active");
   });
 
-  // Evitar que se cierre si haces click dentro del menú
+
   dropdown.addEventListener("click", (e) => {
     e.stopPropagation();
   });
 
-  // Cerrar si haces click fuera
+
   document.addEventListener("click", () => {
     hamburger.classList.remove("active");
     dropdown.classList.remove("active");
   });
 
-  // Cerrar si haces scroll
+
   window.addEventListener("scroll", () => {
     hamburger.classList.remove("active");
     dropdown.classList.remove("active");
   });
 
-  // Cerrar si redimensionas pantalla
+
   window.addEventListener("resize", () => {
     hamburger.classList.remove("active");
     dropdown.classList.remove("active");
@@ -81,8 +77,8 @@ if (hamburger && dropdown) {
 document.querySelectorAll('.faq-question').forEach(item => {
   item.addEventListener('click', () => {
     const parent = item.parentElement;
-    
-    // Cerrar otros si se abre uno nuevo (opcional)
+
+
     document.querySelectorAll('.faq-item').forEach(child => {
       if (child !== parent) child.classList.remove('active');
     });
