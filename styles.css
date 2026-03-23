@@ -1,6 +1,3 @@
-/* =========================================
-   1. VARIABLES Y ESTILOS GLOBALES
-   ========================================= */
 :root {
   --bg: #05070d;
   --bg-soft: #0f1729;
@@ -37,9 +34,6 @@ body {
   background: var(--bg-soft);
 }
 
-/* =========================================
-   2. COMPONENTES (BOTONES Y FLOATS)
-   ========================================= */
 button,
 .btn-primary,
 .btn-secondary,
@@ -58,7 +52,7 @@ button,
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  text-decoration: none; 
+  text-decoration: none;
   color: white;
   transition: 0.3s ease;
 }
@@ -103,9 +97,10 @@ button,
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
   z-index: 999;
   transition: 0.3s ease;
-animation: whatsappPulse 2s infinite;
+  animation: whatsappPulse 2s infinite;
 
 }
+
 @keyframes whatsappPulse {
   0% {
     transform: scale(1);
@@ -122,13 +117,11 @@ animation: whatsappPulse 2s infinite;
     box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
   }
 }
+
 .whatsapp-float:hover {
   transform: scale(1.1);
 }
 
-/* =========================================
-   3. HEADER Y NAVEGACIÓN
-   ========================================= */
 .header {
   position: fixed;
   width: 100%;
@@ -182,7 +175,6 @@ nav a:hover {
   color: var(--primary-soft);
 }
 
-/* MENU HAMBURGUESA Y DROPDOWN */
 .menu-container {
   position: relative;
 }
@@ -246,9 +238,6 @@ nav a:hover {
   color: var(--primary-soft);
 }
 
-/* =========================================
-   4. HERO SECTION
-   ========================================= */
 .hero {
   min-height: 100vh;
   display: flex;
@@ -325,9 +314,6 @@ nav a:hover {
   color: #9aa4b2;
 }
 
-/* =========================================
-   5. CARDS Y GRIDS GENERALES
-   ========================================= */
 .card-grid {
   margin-top: 40px;
   display: grid;
@@ -392,9 +378,6 @@ nav a:hover {
   border: 1px solid var(--primary-soft);
 }
 
-/* =========================================
-   6. CATEGORÍAS ESTÁTICAS
-   ========================================= */
 .categories-static {
   background: #05070d;
   padding: 90px 0;
@@ -521,9 +504,6 @@ nav a:hover {
   transform: scale(1.03);
 }
 
-/* =========================================
-   7. ABOUT SECTION
-   ========================================= */
 .about {
   padding: 120px 20px;
 }
@@ -592,7 +572,6 @@ nav a:hover {
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
 }
 
-/* MISIÓN, VISIÓN, VALORES */
 .about__cards {
   margin-top: 80px;
   display: grid;
@@ -625,9 +604,6 @@ nav a:hover {
   font-size: 24px;
 }
 
-/* =========================================
-   8. MARCAS ALIADAS
-   ========================================= */
 .brands-section {
   padding: 60px 20px;
   text-align: center;
@@ -663,9 +639,6 @@ nav a:hover {
   transform: scale(1.05);
 }
 
-/* =========================================
-   9. CONTACTO
-   ========================================= */
 .contact-section {
   background: #05070d;
   padding: 100px 40px;
@@ -723,9 +696,7 @@ nav a:hover {
   font-weight: 600;
   cursor: pointer;
 }
-/* =========================================
-   12. FAQ ACORDEÓN (ESTILO DARK)
-   ========================================= */
+
 .faq-container {
   max-width: 800px;
   margin: 0 auto;
@@ -781,18 +752,13 @@ nav a:hover {
 }
 
 .faq-item.active .faq-answer {
-  max-height: 200px; 
+  max-height: 200px;
 }
 
 .faq-item.active .faq-question i {
   transform: rotate(180deg);
 }
 
-
-
-/* =========================================
-   10. CARRUSEL
-   ========================================= */
 .carousel-section {
   padding: 60px 0;
 }
@@ -874,9 +840,17 @@ nav a:hover {
   z-index: 100;
 }
 
-.arrow.left { left: 10px; }
-.arrow.right { right: 10px; }
-.arrow:hover { background: var(--primary); }
+.arrow.left {
+  left: 10px;
+}
+
+.arrow.right {
+  right: 10px;
+}
+
+.arrow:hover {
+  background: var(--primary);
+}
 
 footer {
   text-align: center;
@@ -885,13 +859,11 @@ footer {
   color: var(--muted);
 }
 
-/* =========================================
-   11. MEDIA QUERIES (RESPONSIVE)
-   ========================================= */
 @media (max-width: 1024px) {
   .hero h1 {
     font-size: 2.3rem;
   }
+
   nav {
     display: none;
   }
@@ -901,6 +873,7 @@ footer {
   .about__grid {
     grid-template-columns: 1fr;
   }
+
   .about__stats {
     flex-direction: column;
     gap: 15px;
@@ -911,22 +884,28 @@ footer {
   .carousel .card {
     flex: 0 0 240px;
   }
+
   .card {
     min-width: 250px;
   }
+
   .section {
     padding: 100px 20px;
   }
+
   .hero {
     height: auto;
     padding: 120px 20px;
   }
+
   .hero h1 {
     font-size: 1.8rem;
   }
+
   .brands-container {
     gap: 20px;
   }
+
   .brands-container img {
     height: 28px;
   }
@@ -936,6 +915,7 @@ footer {
   .card {
     min-width: 220px;
   }
+
   .arrow {
     font-size: 18px;
     padding: 6px 10px;

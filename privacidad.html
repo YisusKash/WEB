@@ -4,57 +4,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Política de Privacidad | INCOLpartes</title>
-    <link rel="icon" type="image/jpeg" href="assets/img/logo.jpeg">
+    <title>Política de Privacidad | INCOLmotor</title>
+    <link rel="icon" type="image/png" href="assets/img/logo.png">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
     <style>
-        .header {
-            position: fixed;
-
-            top: 0;
-
-            left: 0;
-
-            width: 100%;
-
-            z-index: 1000;
-
-            background: var(--bg-soft);
-
+        /* Ajustes específicos para lectura legal */
+        .privacy-hero {
+            padding-top: 140px;
+            padding-bottom: 60px;
+            text-align: center;
+            background: linear-gradient(180deg, var(--bg) 0%, var(--bg-soft) 100%);
         }
 
-        .privacy-content {
-            max-width: 800px;
-            margin: 150px auto 100px;
+        .privacy-container {
+            max-width: 900px;
+            margin: 0 auto 100px;
+            padding: 0 20px;
+        }
+
+        .privacy-card {
+            background: var(--bg-soft);
             padding: 40px;
-            background: var(--bg-soft);
-            border-radius: 18px;
-            line-height: 1.8;
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .privacy-card h2 {
+            color: var(--primary-soft);
+            font-size: 1.4rem;
+            margin: 30px 0 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .privacy-card h2 i {
+            font-size: 1.1rem;
+            opacity: 0.8;
+        }
+
+        .privacy-card p,
+        .privacy-card li {
             color: var(--muted);
+            line-height: 1.8;
+            font-size: 0.95rem;
         }
 
-        .privacy-content h1,
-        .privacy-content h2 {
-            color: var(--text);
+        .privacy-card ul {
+            margin-left: 20px;
             margin-bottom: 20px;
         }
 
-        .privacy-content h1 {
-            border-bottom: 2px solid var(--primary-soft);
-            display: inline-block;
-            padding-bottom: 10px;
-        }
-
-        .privacy-content p {
-            margin-bottom: 20px;
-        }
-
-        .back-link {
+        .back-btn {
+            margin-bottom: 30px;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
             color: var(--primary-soft);
             text-decoration: none;
-            font-weight: bold;
-            display: inline-block;
-            margin-bottom: 30px;
+            font-size: 0.9rem;
+            transition: 0.3s;
+        }
+
+        .back-btn:hover {
+            transform: translateX(-5px);
+        }
+
+        .highlight-box {
+            background: rgba(47, 136, 255, 0.05);
+            border-left: 4px solid var(--primary-soft);
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 0 10px 10px 0;
         }
     </style>
 </head>
@@ -63,49 +86,79 @@
     <header class="header">
         <div class="logo-container">
             <a href="index.html" class="logo-link">
-                <img src="assets/img/logo.jpeg" alt="Logo INCOLpartes" class="logo" />
-                <h2 class="brand-text"><span>INCOL</span>partes</h2>
+                <img src="assets/img/logo.png" alt="Logo INCOLmotor" class="logo" />
+                <h2 class="brand-text"><span>INCOL</span>motor</h2>
             </a>
         </div>
     </header>
 
-    <main class="privacy-content">
-        <a href="index.html" class="back-link">← Volver al inicio</a>
-        <h1>Política de Privacidad</h1>
+    <main>
+        <section class="hero" style="min-height: 40vh; padding-top: 120px;">
+            <div class="hero-content">
+                <span class="hero-badge">Información Legal</span>
+                <h1>Política de Privacidad</h1>
+                <div class="hero-line"></div>
+                <p>Última actualización: Marzo 2026</p>
+            </div>
+        </section>
 
-        <p>En <strong>INCOLpartes</strong>, valoramos tu privacidad. Esta política describe cómo manejamos la
-            información cuando utilizas nuestro sitio web y te pones en contacto con nosotros.</p>
+        <section class="privacy-container">
+            <a href="index.html" class="back-btn">
+                <i class="fas fa-arrow-left"></i> Volver al inicio
+            </a>
 
-        <h2>1. Información que Recolectamos</h2>
-        <p>Cuando utilizas nuestro formulario de contacto o nos escribes por WhatsApp, podemos recolectar datos como su
-            nombre, correo electrónico y número de teléfono. Estos datos son proporcionados voluntariamente por usted
-            para recibir una cotización o asesoría.</p>
+            <div class="privacy-card">
+                <p>En <strong>INCOLmotor</strong>, la confianza es el motor de nuestro negocio. Esta política explica
+                    cómo protegemos tus datos personales cuando buscas repuestos con nosotros.</p>
 
-        <h2>2. Uso de la Información</h2>
-        <p>Utilizamos la información recolectada exclusivamente para:</p>
-        <ul>
-            <li>Responder a sus solicitudes de cotización de repuestos.</li>
-            <li>Brindar asesoría técnica sobre autopartes.</li>
-            <li>Mejorar nuestros servicios y la experiencia del usuario en el sitio.</li>
-        </ul>
+                <div class="highlight-box">
+                    <strong>Resumen:</strong> No vendemos tus datos a terceros. Los usamos únicamente para gestionar tus
+                    cotizaciones y mejorar tu experiencia de compra.
+                </div>
 
-        <h2>3. Google Ads y Cookies</h2>
-        <p>Este sitio puede utilizar cookies para mejorar la relevancia de los anuncios que ves a través de Google Ads.
-            Las cookies permiten a Google y a sus socios mostrar anuncios basados en tus visitas a este y otros sitios
-            web.</p>
+                <h2><i class="fas fa-database"></i> 1. Datos que Recolectamos</h2>
+                <p>Al interactuar con nuestra plataforma (Formularios o WhatsApp), recolectamos:</p>
+                <ul>
+                    <li>Datos de contacto: Nombre, correo electrónico y teléfono.</li>
+                    <li>Datos del vehículo: Modelo, marca y año (para precisión técnica).</li>
+                    <li>Datos de navegación: Dirección IP y cookies de sesión.</li>
+                </ul>
 
-        <h2>4. Protección de Datos</h2>
-        <p>No compartimos, vendemos ni alquilamos tus datos personales a terceros. Tu información está segura y solo es
-            utilizada por el equipo de INCOLpartes.</p>
+                <h2><i class="fas fa-chart-line"></i> 2. Uso de la Información</h2>
+                <p>Tus datos nos permiten:</p>
+                <ul>
+                    <li>Generar cotizaciones precisas de autopartes.</li>
+                    <li>Coordinar envíos nacionales desde nuestra sede en Bogotá.</li>
+                    <li>Optimizar nuestras campañas en Google Ads para mostrarte solo lo que tu vehículo necesita.</li>
+                </ul>
 
-        <h2>5. Contacto</h2>
-        <p>Si tiene preguntas sobre nuestra política de privacidad, puede contactarnos a través de
-            ventas@incolpartes.com o al número +57 321 250 5332.</p>
+                <h2><i class="fas fa-cookie-bite"></i> 3. Google Ads y Cookies</h2>
+                <p>Utilizamos herramientas de Google para análisis y publicidad. Estas "cookies" ayudan a identificar
+                    qué repuestos son de tu interés. Puedes desactivarlas en cualquier momento desde la configuración de
+                    tu navegador.</p>
+
+                <h2><i class="fas fa-shield-alt"></i> 4. Seguridad</h2>
+                <p>Implementamos medidas de seguridad técnicas para evitar el acceso no autorizado. Tus conversaciones
+                    de WhatsApp están protegidas por el cifrado de dicha plataforma.</p>
+
+                <h2><i class="fas fa-envelope-open-text"></i> 5. Contacto Legal</h2>
+                <p>Para ejercer tus derechos de actualización o supresión de datos, escríbenos a:</p>
+                <p>
+                    <strong>Email:</strong> ventas@incolmotor.com<br>
+                    <strong>WhatsApp:</strong> +57 320 903 5105
+                </p>
+            </div>
+        </section>
     </main>
 
-    <footer>
-        <p>© 2006 INCOLpartes - Todos los derechos reservados</p>
+    <footer style="padding: 60px 20px; text-align: center; border-top: 1px solid rgba(255,255,255,0.05);">
+        <p>© 2026 INCOLmotor - Todos los derechos reservados</p>
+        <p style="font-size: 0.8rem; color: var(--muted); margin-top: 10px;">Repuestos para Carros en Colombia</p>
     </footer>
+
+    <a href="https://wa.me/573209035105" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
 </body>
 
 </html>
